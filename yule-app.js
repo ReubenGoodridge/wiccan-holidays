@@ -20,7 +20,7 @@ var mixer
 
 const loader = new GLTFLoader()
 var obj
-loader.load('pumpkin.glb', function (gltf) {
+loader.load('tree.glb', function (gltf) {
   mixer = new THREE.AnimationMixer(gltf.scene)
   obj = gltf.scene
   scene.add(gltf.scene)
