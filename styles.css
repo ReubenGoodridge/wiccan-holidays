@@ -1,1 +1,61 @@
-# wiccan-holidays
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(to right, #3a5a40 0%, #3a5a40 50%, #f29559 50%, #f29559 100%);
+}
+
+.welcome {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  text-align: center;
+  color: #fff;
+}
+
+h1 {
+  font-size: 60px;
+}
+
+h2 {
+  font-size: 15px;
+  font-style: italic;
+  font-weight: thin;
+}
+
+.samhain {
+  background-color: #3a5a40;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  font-size: 16px;
+  position: absolute;
+  right: 10%;
+  top: 48%;
+}
+
+.yule {
+  background-color: #f29559;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  font-size: 16px;
+  position: absolute;
+  left: 10%;
+  top: 48%;
+}
