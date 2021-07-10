@@ -9,10 +9,10 @@ const renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true })
 renderer.setSize( window.innerWidth, window.innerHeight )
 section.appendChild( renderer.domElement )
 
-const ambient = new THREE.AmbientLight(0xddbea9)
+const ambient = new THREE.AmbientLight(0x3a5a40)
 scene.add(ambient)
 
-const light = new THREE.DirectionalLight(0xffe5d9)
+const light = new THREE.DirectionalLight(0xa3b18a)
 light.position.set(0, 0, 6)
 scene.add(light)
 
@@ -23,6 +23,7 @@ var obj
 loader.load('tree.glb', function (gltf) {
   mixer = new THREE.AnimationMixer(gltf.scene)
   obj = gltf.scene
+  obj.position.y = -2.5
   scene.add(gltf.scene)
 })
 
